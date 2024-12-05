@@ -1,0 +1,77 @@
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+.box{
+  background-color: rgb(221, 218, 218);
+  padding: 20px;
+  width: 100%;
+  color: black;
+}
+.box .auth{
+    /* font-size: larger; */
+    text-align: center;
+    margin-bottom: 4%;
+}
+.body{
+  background-color: rgb(28, 75, 75);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around; /* Space between the forms */
+  gap: 20px; /* Space between the forms */
+  margin-top:3%;
+  
+
+}
+
+.login-form, .signup-form {
+  flex: 1; /* Allow both forms to take equal space */
+  max-width: 400px; /* Set a maximum width for each form */
+  background-color: aliceblue;
+  padding: 2%;
+  border-radius: 4%;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+.login-form1, .signup-form1 {
+  flex: 1; /* Allow both forms to take equal space */
+  max-width: 400px; /* Set a maximum width for each form */
+  background-color: aliceblue;
+  padding: 2%;
+  border: 1px solid #cccaca;
+  border-radius: 4%;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+}

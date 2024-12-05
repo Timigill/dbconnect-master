@@ -1,0 +1,58 @@
+/* signup.css */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    gap: 16px; /* Space between inputs */
+    max-width: 400px; /* Maximum width of the form */
+    margin: auto; /* Center the form horizontally */
+}
+
+.signup-form h2 {
+    text-align: center; /* Center the heading */
+    margin-top: 3%; /* Adjust margin to match login */
+    font-size: x-large; /* Match font size with login */
+    font-weight: bold; /* Match font weight with login */
+}
+
+.signup-form input {
+    padding: 2%;
+    border: 1px solid #0070f3;
+    border-radius: 4px;
+    background-color: #d1e0ee;
+    color: black;
+}
+
+.signup-form .signupbutton {
+    padding: 1.5%; /* Match padding with login */
+    background-color: #0070f3; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: medium; /* Match font size with login */
+    margin-bottom: 5%; /* Match margin with login */
+}
+
+.signup-form button:hover {
+    background-color: #005bb5; /* Darker color on hover */
+}
+
+.error-message {
+    color: red; /* Color for error messages */
+    font-size: 14px; /* Font size for error messages */
+}
+.toggle-password {
+    margin-left: 10px; /* Space between input and button */
+    background-color:#0070f3 ; /* Remove default button styling */
+    border: none; /* Remove border */
+    color: white; /* Primary color for the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: small; /* Match font size with input */
+    border-radius: 4px;
+    padding: 2%; /* Remove padding for a cleaner look */
+}
+
+.toggle-password:hover {
+    color: white; /* Darker color on hover */
+}
