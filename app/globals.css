@@ -24,7 +24,7 @@
   justify-content: space-around; /* Space between the forms */
   gap: 20px; /* Space between the forms */
   margin-top:3%;
-  
+  flex-wrap: wrap;
 
 }
 
