@@ -42,7 +42,7 @@ export default function Dashboard({ setUser  }) {
                     ))}
                 </tbody>
             </table>
-            {/* Link to Home Page */}
+            {/*Home Page */}
      
         </div>
     );

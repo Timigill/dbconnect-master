@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import "./login.css"; // Ensure this path is correct
+import "./login.css";
 
 const Login = ({ setUser  }) => {
     const { register, handleSubmit, setError, formState: { errors } } = useForm();
-    const [showPassword, setShowPassword] = useState(false); // State to manage password visibility
+    const [showPassword, setShowPassword] = useState(false); 
 
     const onSubmit = async (data) => {
         data.action = 'login'; 
@@ -27,7 +27,7 @@ const Login = ({ setUser  }) => {
     };
 
     const togglePasswordVisibility = () => {
-        setShowPassword(!showPassword); // Toggle the password visibility
+        setShowPassword(!showPassword); 
     };
 
     return (
@@ -45,7 +45,7 @@ const Login = ({ setUser  }) => {
                     <input 
                         {...register('password', { required: true })} 
                         className="password-input" 
-                        type={showPassword ? 'text' : 'password'} // Change type based on visibility
+                        type={showPassword ? 'text' : 'password'} 
                         placeholder="Password"  required
                     />
                     <button 
@@ -53,7 +53,7 @@ const Login = ({ setUser  }) => {
                         onClick={togglePasswordVisibility} 
                         className="toggle-password"
                     >
-                       {showPassword ? 'Hide' : 'Show'} {/* Toggle button text */}
+                       {showPassword ? 'Hide' : 'Show'} {/* button */}
                     </button>    
                 </div>
                 {errors.password && <p className="error-message">{errors.password.message}</p>}
