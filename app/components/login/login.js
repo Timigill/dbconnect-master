@@ -14,7 +14,8 @@ const Login = ({ setUser  }) => {
                 headers: { 'Content-Type': 'application/json' },
             });
 
-            setUser (response.data); // Set the logged-in user
+            setUser (response.data);
+            localStorage.setItem('user', JSON.stringify(response.data));
         } catch (err) {
             console.log('Login failed:', err.message);
             if (err.response) {

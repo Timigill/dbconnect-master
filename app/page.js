@@ -1,12 +1,19 @@
 // app/page.js
 'use client';
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import Login from '@/app/components/login/login';
 import Signup from '@/app/components/signup/signup';
 import Dashboard from './components/dashboard/dashboard';
 
 export default function Home() {
     const [user, setUser ] = useState(null);
+
+    useEffect(() => {
+        const storedUser  = localStorage.getItem('user');
+        if (storedUser ) {
+            setUser (JSON.parse(storedUser )); // Set user state from local storage
+        }
+    }, []);
 
     return (
         <div className='body'>

@@ -21,6 +21,7 @@ export default function Dashboard({ setUser  }) {
 
     const handleLogout = () => {
         setUser (null); 
+        localStorage.removeItem('user');
     };
 
     return (
@@ -31,7 +32,7 @@ export default function Dashboard({ setUser  }) {
                 <thead>
                     <tr>
                         <th className="tableHeader">User  Name</th><th className="tableHeader">Email</th> {/* New column for Email */}
-                    </tr>
+                </tr>
                 </thead>
                 <tbody>
                     {users.map((user) => (
