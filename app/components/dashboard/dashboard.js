@@ -42,11 +42,7 @@ export default function Dashboard({ setUser  }) {
                 </tbody>
             </table>
             {/* Link to Home Page */}
-            <Link href="/">
-                <button className="homeButton">
-                    Go to Home
-                </button>
-            </Link>
+     
         </div>
     );
 }
