@@ -2,7 +2,7 @@
 'use client';
 import { useState , useEffect} from 'react';
 import Login from '@/app/components/login/login';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Signup from '@/app/components/signup/signup';
 
@@ -26,7 +26,7 @@ import Dashboard from './components/dashboard/dashboard';
                 <h1 className='auth'>Authentication</h1>
                 {!user ? (
                     <>
-                        <div className='container1'>
+                       <SpeedInsights/> <div className='container1'>
                             <div className='login-form1'>  
                                 <Login setUser ={setUser } />
                             </div> 
