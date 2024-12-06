@@ -8,6 +8,7 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
+            <head><title>DataBase App</title></head>
             <body>
            
                 <main>
