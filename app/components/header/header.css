@@ -1,0 +1,33 @@
+header{
+  height: 10vh;
+display: flex;
+justify-content: space-between;
+background-color: #212121;
+padding-bottom: 5%;
+}
+header .links{
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items:center ;
+    list-style: none;
+    padding: 2%;
+}
+
+header .li{
+      color: #ffffff;
+      border-radius: 15px;
+      padding: 13.5%;
+      width: fit-content;
+}
+
+header img{
+    height: 10vh;
+    padding: 6%;
+}
+header li:hover{
+    cursor: pointer;
+    color: rgb(255,124,30);
+}

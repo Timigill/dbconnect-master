@@ -1,4 +1,4 @@
-import { User } from "@/models/user"; 
+import { User } from "models/user";
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
@@ -17,23 +17,22 @@ export async function POST(req) {
 async function handleSignup(data) {
     const { fullName, password, email } = data;
 
-    
-    const existingUser  = await User.findOne({ email });
+    const existingUser = await User.findOne({ email });
 
-    if (existingUser ) {
-        return NextResponse.json({ message: "User  already exists" }, { status: 400 });
+    if (existingUser) {
+        return NextResponse.json({ message: "User already exists" }, { status: 400 });
     }
 
-    let newUser  = new User({
+    let newUser = new User({
         fullName,
         password, 
         email,
     });
 
-    await newUser .save();
-    console.log("User  Saved");
+    await newUser.save();
+    console.log("User Saved");
 
-    const { password: _, ...userData } = newUser .toObject();
+    const { password: _, ...userData } = newUser.toObject();
     return NextResponse.json(userData);
 }
 
@@ -42,7 +41,7 @@ async function handleLogin(data) {
 
     const user = await User.findOne({ email });
     if (!user) {
-        return NextResponse.json({ message: "User  not found" }, { status: 404 });
+        return NextResponse.json({ message: "User not found" }, { status: 404 });
     }
 
     if (user.password !== password) {
@@ -52,4 +51,3 @@ async function handleLogin(data) {
     const { password: _, ...userData } = user.toObject();
     return NextResponse.json(userData);
 }
-

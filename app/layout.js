@@ -1,6 +1,6 @@
 'use client';
 import "./globals.css";
-
+import Header from './components/header/header';
 import { useState } from 'react';
 import React from 'react';
 export default function RootLayout({ children }) {
@@ -8,11 +8,12 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
-            <head><title>DataBase App</title></head>
+            <head><title>StepHub</title></head>
             <body>
            
                 <main>
-                    {React.cloneElement(children, { setUser  })} {/* Pass setUser  to children */}
+                    <Header></Header>
+                    {React.cloneElement(children, { setUser  })} {}
                 </main>
             </body>
         </html>

@@ -5,7 +5,8 @@
     gap: 16px; /* Space between inputs */
     max-width: 400px; /* Maximum width of the form */
     margin: auto; /* Center the form horizontally */
-    color: black; /* Text color */
+    color: white; /* Text color */
+    background: #323131;
 }
 
 .login-form h2 {
@@ -19,28 +20,28 @@
     padding: 2%; /* Padding inside input fields */
     border: 1px solid #0070f3; /* Border color */
     border-radius: 4px; /* Rounded corners */
-    background-color: #d1e0ee; /* Background color for input fields */
+    background-color: #d1e0ee; 
     color: black; /* Text color for input fields */
 }
 
 .password-container {
-    display: flex; /* Flexbox for password input and button */
+    display: flex; 
     font-size: small;
-    align-items: baseline; /* Align items vertically */
+    align-items: baseline; 
 }
 
 .password-input {
-    flex: 1; /* Take up available space */
-    padding: 2%; /* Padding inside password input */
-    border: 1px solid #0070f3; /* Border color */
-    border-radius: 4px; /* Rounded corners */
-    background-color: #000000; /* Background color for password input */
-    color: black; /* Text color for password input */
+    flex: 1; 
+    padding: 2%; 
+    border: 1px solid #ff8835; 
+    border-radius: 4px; 
+    background-color: #000000; 
+    color: black; 
 }
 
 .toggle-password {
-    margin-left: 10px; /* Space between input and button */
-    background-color:#0070f3 ; /* Remove default button styling */
+    margin-left: 10px; 
+    background-color: #ff8835 ; 
     border: none; /* Remove border */
     color: white; /* Primary color for the icon */
     cursor: pointer; /* Pointer cursor on hover */
@@ -50,12 +51,13 @@
 }
 
 .toggle-password:hover {
-    color: #005bb5; /* Darker color on hover */
+    color: white;
+    background-color: #f7781e;
 }
 
 .login-form .loginbutton {
     padding: 1.5%; /* Padding for the button */
-    background-color: #0070f3; /* Button background color */
+    background-color: #ff8835; /* Button background color */
     color: white; /* Button text color */
     border: none; /* No border */
     border-radius: 4px; /* Rounded corners */
@@ -65,7 +67,7 @@
 }
 
 .login-form button:hover {
-    background-color: #005bb5; /* Darker color on hover */
+    background-color: #f7781e; /* Darker color on hover */
 }
 
 .error-message {
@@ -86,9 +88,38 @@
 }
 
 .tcs input[type='checkbox'] {
-    accent-color: #0070f3; /* Change this to your desired color */
+    accent-color: #ff8835; /* Change this to your desired color */
 }
 
 .tcs p {
     font-size: 88%; /* Font size for terms and conditions text */
+}
+/* toast.css */
+.Toastify__Toast {
+    background-color: #323131; /* Match your page background */
+    color: white; /* Match your text color */
+    border-radius: 4px; /* Optional: Add border radius */
+}
+
+.Toastify__toast--success {
+    background-color: white;
+    color: #ff8835; /* Green for success */
+}
+
+.Toastify__toast--error {
+    background-color: #ffffff; 
+    color: red;
+}
+
+.Toastify__Toast-body {
+    font-family: var(--font-geist-sans); 
+}
+.Toastify__progress-bar {
+    background-color: #f7771d; 
+}
+.welcome{
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }

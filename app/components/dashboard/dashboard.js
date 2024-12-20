@@ -27,21 +27,20 @@ export default function Dashboard({ setUser  }) {
     return (
         <div className="dashboard">
             <h1 className="title">User  List</h1>
-            <button onClick={handleLogout} className="logoutButton">Logout</button> {/* Logout button */}
             <table className="userTable">
                 <thead>
                     <tr>
-                        <th className="tableHeader">User  Name</th><th className="tableHeader">Email</th> {/* New column for Email */}
-                </tr>
+                        <th className="tableHeader">User  Name</th><th className="tableHeader">Email</th> {/* New column for Email */}</tr>
                 </thead>
                 <tbody>
                     {users.map((user) => (
                         <tr className="tableRow" key={user._id}>
-                            <td className="tableData">{user.fullName}</td><td className="tableData">{user.email}</td> {/* Display email here */}
-                        </tr>
+                            <td className="tableData">{user.fullName}</td><td className="tableData">{user.email}</td> {/* Display email here */}</tr>
                     ))}
                 </tbody>
+                
             </table>
+            <button onClick={handleLogout} className="logoutButton">Logout</button> {/* Logout button */}
             {/*Home Page */}
      
         </div>
