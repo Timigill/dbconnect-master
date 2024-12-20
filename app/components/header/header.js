@@ -14,7 +14,7 @@ function Header() {
               
             <Link href="/login"><li className='li'>Login</li></Link>
             <Link href="/signup"><li className='li'>Signup</li></Link>
-            <Link href=""><li className='li'>Cart</li></Link>
+            <Link href="/cart"><li className='li'>Cart</li></Link>
                     
             </div>
         </header>

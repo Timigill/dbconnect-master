@@ -27,6 +27,83 @@ const products = [
         price: 49.99,
         imageUrl: '/p4.png',
     },
+    {
+        id:5,
+        name: 'Product 1',
+        description: 'Famous Filmstar Shoes',
+        price: 29.99,
+        imageUrl: '/p1.png',
+    },
+    {
+        id:6,
+        name: 'Shoes No 2',
+        description: 'A.M ',
+        price: 39.99,
+        imageUrl: '/p2.png',
+    },
+    {
+        id:7,
+        name: 'Item No 3',
+        description: 'Best Shoes',
+        price: 49.99,
+        imageUrl: '/p3.png',
+    },
+    {
+        id:8,
+        name: 'Product 2',
+        description: 'All Features U Need',
+        price: 49.99,
+        imageUrl: '/p4.png',
+    },
+    {
+        id:9,
+        name: 'Item No 3',
+        description: 'Best Shoes',
+        price: 49.99,
+        imageUrl: '/p3.png',
+    },
+    {
+        id:10,
+        name: 'Product 2',
+        description: 'All Features U Need',
+        price: 49.99,
+        imageUrl: '/p4.png',
+    },
+    {
+        id:11,
+        name: 'Product 1',
+        description: 'Famous Filmstar Shoes',
+        price: 29.99,
+        imageUrl: '/p1.png',
+    },
+    {
+        id:12,
+        name: 'Shoes No 2',
+        description: 'A.M ',
+        price: 39.99,
+        imageUrl: '/p2.png',
+    },
+    {
+        id:13,
+        name: 'Item No 3',
+        description: 'Best Shoes',
+        price: 49.99,
+        imageUrl: '/p3.png',
+    },
+    {
+        id:14,
+        name: 'Product 2',
+        description: 'All Features U Need',
+        price: 49.99,
+        imageUrl: '/p4.png',
+    },
+    {
+        id:15,
+        name: 'Product 2',
+        description: 'All Features U Need',
+        price: 49.99,
+        imageUrl: '/p4.png',
+    }
 ];
 
 export default products;
