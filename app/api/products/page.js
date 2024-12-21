@@ -1,7 +1,7 @@
 const products = [
     {
         id:1,
-        name: 'Product 1',
+        name: 'Shoes No 1',
         description: 'Famous Filmstar Shoes',
         price: 29.99,
         imageUrl: '/p1.png',
@@ -15,18 +15,95 @@ const products = [
     },
     {
         id:3,
-        name: 'Item No 3',
+        name: 'Shoes No 3',
         description: 'Best Shoes',
         price: 49.99,
         imageUrl: '/p3.png',
     },
     {
         id:4,
-        name: 'Product 2',
+        name: 'Shoes No 4',
         description: 'All Features U Need',
         price: 49.99,
         imageUrl: '/p4.png',
     },
+    {
+        id:5,
+        name: 'Shoes No 5',
+        description: 'Famous Filmstar Shoes',
+        price: 29.99,
+        imageUrl: '/p5.png',
+    },
+    {
+        id:6,
+        name: 'Shoes No 6',
+        description: 'A.M ',
+        price: 39.99,
+        imageUrl: '/p6.png',
+    },
+    {
+        id:7,
+        name: 'Shoes No 7',
+        description: 'Best Shoes',
+        price: 49.99,
+        imageUrl: '/p7.png',
+    },
+    {
+        id:8,
+        name: 'Shoes No 8',
+        description: 'All Features U Need',
+        price: 49.99,
+        imageUrl: '/p8.png',
+    },
+    {
+        id:9,
+        name: 'Shoes No 9',
+        description: 'Best Shoes',
+        price: 49.99,
+        imageUrl: '/p9.png',
+    },
+    {
+        id:10,
+        name: 'Shoes No 10',
+        description: 'All Features U Need',
+        price: 49.99,
+        imageUrl: '/p10.png',
+    },
+    {
+        id:11,
+        name: 'Shoes No 11',
+        description: 'Famous Filmstar Shoes',
+        price: 29.99,
+        imageUrl: '/p11.png',
+    },
+    {
+        id:12,
+        name: 'Shoes No 12',
+        description: 'A.M ',
+        price: 39.99,
+        imageUrl: '/p12.png',
+    },
+    {
+        id:13,
+        name: 'Shoes No 13',
+        description: 'Best Shoes',
+        price: 49.99,
+        imageUrl: '/p13.png',
+    },
+    {
+        id:14,
+        name: 'Shoes No 14',
+        description: 'All Features U Need',
+        price: 49.99,
+        imageUrl: '/p14.png',
+    },
+    {
+        id:15,
+        name: 'Shoes No 15',
+        description: 'All Features U Need',
+        price: 49.99,
+        imageUrl: '/p15.png',
+    }
 ];
 
 export default products;

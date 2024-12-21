@@ -1,33 +1,54 @@
-header{
-  height: 10vh;
-display: flex;
-justify-content: space-between;
-background-color: #212121;
-padding-bottom: 5%;
-}
-header .links{
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    padding-bottom: 5%;
+  }
+  
+  header .links {
     width: 40%;
-
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
-    align-items:center ;
+    align-items: center;
     list-style: none;
     padding: 2%;
-}
-
-header .li{
-      color: #ffffff;
-      border-radius: 15px;
-      padding: 13.5%;
-      width: fit-content;
-}
-
-header img{
+    position: relative; /* Added for absolute positioning of .span */
+  }
+  
+  header .li {
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 13.5%;
+    width: fit-content;
+  }
+  
+  header img {
     height: 10vh;
     padding: 6%;
-}
-header li:hover{
+  }
+  
+  header li:hover {
     cursor: pointer;
-    color: rgb(255,124,30);
-}
+    color: rgb(255, 124, 30);
+  }
+  
+  .span {
+    margin-right: 6px;
+    background-color: #ff8835;
+    color: black;
+    font-size: medium;
+    width: 13px; /* Adjust size as needed */
+    height: 13px;
+    border-radius: 50%;
+    text-align: center;
+    top: -5px; /* Adjust for exact positioning */
+    left: -5px; /* Adjust for exact positioning */
+  }
+  
+  /* Target only the last child of .links */
+  header .links li:last-child .span {
+    display: block; /* Ensure it's visible */
+  }
+  
