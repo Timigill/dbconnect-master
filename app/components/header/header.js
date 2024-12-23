@@ -12,7 +12,9 @@ function Header() {
                 <Link href="/"><img src="/logo.png" alt="Logo" /></Link>
             </div>
             <div className='links'>
+            <Link href="/"><li className='li'>Home</li></Link>
                 <Link href="/login"><li className='li'>Login</li></Link>
+                <Link href="/products"><li className='li'>Products</li></Link>
                 <Link href="/signup"><li className='li'>Signup</li></Link>
                 <Link href="/cart">
                     <li className='li'>

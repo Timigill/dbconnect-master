@@ -1,12 +1,21 @@
 'use client'; // This makes the component a client component
+import 'font-awesome/css/font-awesome.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState, useEffect } from 'react';
 import { useCart } from '@/app/context/cartcontext';
 import './cart.css'; // Import the CSS file
 
 const Cart = () => {
     const { cart, removeFromCart } = useCart();
     const [selectedItems, setSelectedItems] = useState([]);
+    const [isClient, setIsClient] = useState(false); // Track if we're on the client
+
+    // Set isClient to true after the component mounts
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const handleSelectItem = (productId) => {
         setSelectedItems((prevSelected) => {
@@ -30,8 +39,11 @@ const Cart = () => {
     const handleCheckout = () => {
         const total = calculateTotal();
         alert(`Proceeding to checkout with total: $${total}`);
-        // Here you can implement the actual checkout logic
+        // Implement the actual checkout logic here
     };
+
+    // Only render the component once it's client-side
+    if (!isClient) return null; // Prevent rendering on SSR
 
     return (
         <div className="cart-container">
@@ -51,7 +63,9 @@ const Cart = () => {
                                 />
                                 <span className="cart-item-name">{item.name}</span> - 
                                 <span className="cart-item-price">${item.price.toFixed(2)}</span>
-                                <button className="cart-item-remove" onClick={() => removeFromCart(item.id)}>Remove</button>
+                                <button className="cart-item-remove" onClick={() => removeFromCart(item.id)}>
+                                    <i className="fa-solid fa-trash-can"></i>
+                                </button>
                             </li>
                         ))}
                     </ul>

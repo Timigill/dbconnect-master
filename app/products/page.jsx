@@ -15,17 +15,19 @@ const ProductList = () => {
 
     return (
         <>
-            <h2>Product List</h2>
+            <h2 className="h2" >Product List</h2>
             <div className="product-list">
                 {products.map((product) => (
                     <div key={product.id} className="product-item">
                         <Link href={`/productdetails/${product.id}`} passHref>
-                            <img src={product.imageUrl} alt={product.name} />
+                            <img src={product.imageUrl} alt={product.name} className="product-image" />
                             <h3 className="product-name">{product.name}</h3>
                             <p className="product-description">{product.description}</p>
                             <p className="product-price">Price: ${product.price.toFixed(2)}</p>
                         </Link>
-                        <button className='product-button' onClick={() => handleAddToCart(product)}>Add to Cart</button>
+                        <button className="product-button" onClick={() => handleAddToCart(product)}>
+                            Add to Cart
+                        </button>
                     </div>
                 ))}
             </div>

@@ -1,7 +1,7 @@
 'use client';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
-
+import Footer from './components/footer/footer';
 import "./globals.css";
 import Header from './components/header/header';
 import { useState } from 'react';
@@ -13,7 +13,10 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
-            <head><title>StepHub</title></head>
+            <head><title>StepHub</title>
+            <link rel="icon" href="/icon.ico" type="image/x-icon" />
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"></link>
+</head>
             <body>
                 <CartProvider>
                     <Header />
@@ -21,6 +24,7 @@ export default function RootLayout({ children }) {
                     <main>
                         {React.cloneElement(children, { setUser  })}
                     </main>
+                    <Footer />
                 </CartProvider>
             </body>
         </html>

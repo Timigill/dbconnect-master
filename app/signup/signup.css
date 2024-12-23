@@ -7,6 +7,7 @@
     max-width: 400px; /* Maximum width of the form */
     margin: auto; /* Center the form horizontally */
     background: #323131;
+    margin-top: 50px;
 }
 
 .signup-form h2 {

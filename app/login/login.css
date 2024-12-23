@@ -7,6 +7,7 @@
     margin: auto; /* Center the form horizontally */
     color: white; /* Text color */
     background: #323131;
+    margin-top: 50px;
 }
 
 .login-form h2 {
