@@ -1,0 +1,54 @@
+.Pname {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.Pimg {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Pdescription {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.Pprice {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #2a9d8f;
+    text-align: center;
+}
+
+.cartB {
+    background-color: #e76f51;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.cartB:hover {
+    background-color: #d9534f;
+}
+
+.cartB:active {
+    background-color: #c44d45;
+}
