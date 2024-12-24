@@ -52,7 +52,11 @@
 
 .footer-bottom {
   text-align: center;
+<<<<<<< Updated upstream
   /* margin-top: 2rem; */
+=======
+  margin-top: 2rem;
+>>>>>>> Stashed changes
 }
 
 .footer-bottom p {

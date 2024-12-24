@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
+<<<<<<< Updated upstream
             <head><title>StepHub</title>
             <link rel="icon" href="/icon.ico" type="image/x-icon" />
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"></link>
@@ -21,6 +22,20 @@ export default function RootLayout({ children }) {
                     <Header></Header>
                     {React.cloneElement(children, { setUser  })} {}
                 </main>
+=======
+            <head><title>StepHub</title><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"></link></head>
+            
+
+
+            <body>
+                <CartProvider>
+                    <Header />
+                    <ToastContainer /> {/* Ensure ToastContainer is within CartProvider */}
+                    <main>
+                        {React.cloneElement(children, { setUser  })}
+                    </main>
+                    <Footer />
+>>>>>>> Stashed changes
                 </CartProvider>
                
             </body>

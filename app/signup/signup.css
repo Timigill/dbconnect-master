@@ -77,3 +77,6 @@
 .tcs p {
     font-size: 88%; /* Font size for terms and conditions text */
 }
+.welcome {
+    margin-top: 50px;
+}

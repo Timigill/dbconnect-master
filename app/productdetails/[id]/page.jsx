@@ -25,13 +25,15 @@ const ProductDetails = () => {
 
     return (
         <div className="product-details">
-            <h1 className="Pname">{product.name}</h1>
             <img className="Pimg" src={product.imageUrl} alt={product.name} />
-            <p className="Pdescription">{product.description}</p>
-            <p className="Pprice">Price: ${product.price.toFixed(2)}</p>
-            <button className="add-to-cart" onClick={handleAddToCart}>
-                Add to Cart
-            </button>
+             <div className="product-info">
+                <h1 className="Pname">{product.name}</h1>
+                <p className="Pdescription">{product.innerdescription}</p>
+                <p className="Pprice">Price: ${product.price.toFixed(2)}</p>
+                <button className="add-to-cart" onClick={handleAddToCart}>
+                    Add to Cart
+                </button>
+            </div>
         </div>
     );
 };

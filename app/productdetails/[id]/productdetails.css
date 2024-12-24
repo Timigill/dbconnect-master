@@ -1,45 +1,90 @@
+<<<<<<< Updated upstream
 .Pname {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #333;
     text-align: center;
+=======
+/* productdetails.css */
+
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width : 70%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #eaeaea; /* Subtle border */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+>>>>>>> Stashed changes
 }
 
 .Pimg {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 50%; /* Take up half the width on large screens */
+    max-width: 40%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin: 0 20px;
+    object-fit: cover; /* Ensure proper image scaling */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.product-info {
+    flex: 1 1 50%; /* Take up half the width on large screens */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 60%;
+}
+
+.Pname {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #212121; /* Dark text color */
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .Pdescription {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    text-align: center;
+    font-size: 0.8rem;
+    color: #757575; /* Neutral gray for descriptions */
+    margin-bottom: 15px;
+    line-height: 1.6; /* Improve readability */
+    text-align: left;
 }
 
 .Pprice {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #2a9d8f;
-    text-align: center;
+    color: #ff5722; /* Bright orange for price */
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
+<<<<<<< Updated upstream
 .cartB {
     background-color: #e76f51;
     color: #fff;
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 5px;
+=======
+.add-to-cart {
+>>>>>>> Stashed changes
     font-size: 1rem;
+    font-weight: bold;
+    color: white; /* White text */
+    background-color: #ff5722; /* Bright orange background */
+    padding: 12px 20px; /* Add spacing */
+    border: none;
+    border-radius: 8px; /* Rounded button */
     cursor: pointer;
+<<<<<<< Updated upstream
     transition: background-color 0.3s ease;
     display: block;
     margin: 0 auto;
@@ -51,4 +96,40 @@
 
 .cartB:active {
     background-color: #c44d45;
+=======
+    transition: background-color 0.3s, transform 0.2s;
+    align-self: flex-start; /* Align to the start of the column */
+}
+
+.add-to-cart:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.add-to-cart:active {
+    background-color: #d84315; /* Even darker orange when active */
+    transform: translateY(2px); /* Pressed effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        padding: 10px;
+    }
+
+    .Pimg, .product-info {
+        max-width: 100%;
+        flex: 1 1 100%; /* Take full width */
+        margin: 0 auto; /* Center content */
+    }
+
+    .Pname {
+        font-size: 1.8rem; /* Reduce size for smaller screens */
+    }
+
+    .Pprice {
+        font-size: 1.5rem; /* Reduce size for smaller screens */
+    }
+>>>>>>> Stashed changes
 }

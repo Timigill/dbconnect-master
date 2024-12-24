@@ -15,8 +15,12 @@ function Footer() {
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="/">Home</a></li>
+<<<<<<< Updated upstream
                         <li><a href="/shop">Shop</a></li>
                         <li><a href="/contact">Contact</a></li>
+=======
+                        <li><a href="/products">Products</a></li>
+>>>>>>> Stashed changes
                         <li><a href="/about">About</a></li>
                         <li><a href="/faq">FAQ</a></li>
                     </ul>
@@ -34,7 +38,11 @@ function Footer() {
 
                 <div className="footer-section">
                     <h3>Contact Us</h3>
+<<<<<<< Updated upstream
                     <p>Email: support@shoestore.com</p>
+=======
+                    <p>Email: support@stephub.com</p>
+>>>>>>> Stashed changes
                     <p>Phone: +1 (800) 123-4567</p>
                     <div className="social-icons">
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
@@ -46,7 +54,11 @@ function Footer() {
             </div>
 
             <div className="footer-bottom">
+<<<<<<< Updated upstream
                 <p>&copy; 2024 Shoe Store. All Rights Reserved.</p>
+=======
+                <p>&copy; 2024 Stephub. All Rights Reserved.</p>
+>>>>>>> Stashed changes
             </div>
         </footer>
     );

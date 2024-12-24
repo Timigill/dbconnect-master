@@ -1,9 +1,14 @@
 'use client'; // This makes the component a client component
 
 import React, { useState } from 'react';
+<<<<<<< Updated upstream
 import { useCart } from '@/app/context/CartContext';
 import './cart.css'; // Import the CSS file
 
+=======
+import { useCart } from '@/app/context/cartcontext';
+import './cart.css'; // Import the CSS filem
+>>>>>>> Stashed changes
 const Cart = () => {
     const { cart, removeFromCart } = useCart();
     const [selectedItems, setSelectedItems] = useState([]);
@@ -51,7 +56,8 @@ const Cart = () => {
                                 />
                                 <span className="cart-item-name">{item.name}</span> - 
                                 <span className="cart-item-price">${item.price.toFixed(2)}</span>
-                                <button className="cart-item-remove" onClick={() => removeFromCart(item.id)}>Remove</button>
+                               
+                                <button className="cart-item-remove" onClick={() => removeFromCart(item.id)}><i className="fa-solid fa-trash-can"></i>  </button>
                             </li>
                         ))}
                     </ul>
